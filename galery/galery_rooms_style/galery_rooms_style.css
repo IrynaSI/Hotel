@@ -1,0 +1,609 @@
+
+.common-container{
+    width: 100%;
+    background-color:#fbf9f4;
+}
+
+/*галерея основна сторінка*/
+.container-box-galery,.container-box-galery img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    filter: brightness(95%);
+}
+.container-box-galery:hover{
+    filter: brightness(110%);
+}
+.container-box-galery p{
+    position: absolute;
+    z-index: 9999;
+    color:white;
+    margin:3em  2em;
+    font-size: 2.3em;
+    text-align: center;
+    text-shadow: #000  0.04em 0.03em 0.01em; /*1.5px 1.5px 0.3px*/
+}
+.container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+    width: 98px;
+    height: 90px;
+    display: inline;
+}   
+.container-min{
+    width: 100%;
+    background-color:#4d3c37;
+    text-align: center;
+    padding-top: 0.3em;
+}
+.container-box-min,.container-box-min img{
+    width: 225px;
+    height: 150px;
+    display: inline-block;
+    filter: brightness(90%);
+}
+.container-box-min,.container-box-min img:hover{
+ filter: brightness(110%);
+}
+.container-box-min p{
+    color:white;
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    text-shadow: #000  0.04em 0.03em 0.01em;
+}
+/*галерея ресторан, номери, готель*/
+.container-box{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+.container-box img{
+    width: 300px;
+    height: 300px;
+    filter: brightness(90%);
+}
+.container-box img:hover{
+    width: 300px;
+    height: 300px;
+    filter: brightness(105%);
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;    
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 750px;
+    height: 600px;
+    position: relative;
+    margin: 5em auto;
+    padding: 5px 10px 15px 10px;
+    border-radius: 10px;
+    background: #fff;
+    filter: brightness(120%);
+}
+.modalDialog > div >img{
+    padding: 5px 0;
+    width: 750px;
+    height: 600px;
+}
+.close {
+    position: absolute;
+    background: #606061;
+    color: #FFFFFF;
+    right: -10px;
+    text-align: center;
+    top: -10px;
+    width: 9%;
+    height: 1.1em;
+    font-size: 3em;
+    text-decoration: none;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+    background: #00d9ff; 
+    transform: scale(1.1, 1.1);
+}
+.container-text{
+    float: right;
+    width: 565px;
+    box-sizing: border-box;
+    font-family: 'Open Sans',Georgia,Arial;
+    padding-left:0.1em;/*4px*/
+    padding-right: 0.1em;/*4px*/
+    font-size: 0.959em;/*16px*/
+    margin:0 auto;
+    text-align: justify;
+    color: #47322b;
+}
+.container-text ul{
+    list-style-type:square;
+}
+#galery,
+#hotel-information,
+#hotel-about,
+#hotel-history,
+#hotel-events,
+#galery-rooms,
+#galery-hotel,
+#galery-restaurant,
+#rooms,
+#room-single,
+#room-double,
+#room-twin,
+#room-semiluxury,
+#room-luxury,
+#services,
+#gym-services,
+#beauty-salon-services,
+#massage-services,
+#pets-services,
+#kids-services,
+#excursions-services,
+#contacts {
+    display: none;
+}
+#booking{
+    display: none;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+    .container-box-galery,.container-box-galery img{
+        width: 400px;
+        height: 360px;
+    }
+    .container-box-min,.container-box-min img{
+        width: 310px;
+        height: 190px;
+        display: inline-block;
+    }
+    .container-box-galery p{
+        margin:3.5em  3em;
+        font-size: 2.3em;
+        text-align: center;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 131px;
+        height: 122px;
+    }
+    .modalDialog > div {
+        width: 900px;
+        height: 650px;
+        margin: 3em auto;
+    }
+    .modalDialog > div >img{
+        width: 900px;
+        height: 650px;
+    }
+    .close {
+        right: -9px;
+        top: -12px;і
+        width: 8%;
+        height: 1.1em;
+        font-size: 3em;
+    }
+    .container-text{
+        width:760px;
+        font-size: 1.174em;
+    }
+    
+}
+@media screen and (min-width: 800px) and (max-width: 936px) {
+    .container-box-galery,.container-box-galery img{
+        width: 257px;
+        height: 200px;
+    }
+    .container-box-galery p{
+        margin:2.6em  2.2em;
+        font-size: 2em;
+    }
+    .container-box{
+        padding-left: 5.5em;
+        box-sizing: border-box;
+    }
+    .container-box-min,.container-box-min img{
+        width: 192px;
+        height: 120px;
+        display: inline-block;
+    }
+    .container-box-galery p{
+    margin:2em  1.8em;
+    font-size: 2em;
+}
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 84px;
+        height: 80px;
+    }
+    .modalDialog > div {
+        width: 650px;
+        height: 550px;
+        margin: 6em auto;
+    }
+    .modalDialog > div >img{
+        width: 650px;
+        height: 550px;
+    } 
+    .container-text{
+        width:490px;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        font-size: 0.72em;/*16px*/
+        }
+}
+@media screen and (min-width: 720px) and (max-width: 800px) {
+    .container-box-galery,.container-box-galery img{
+        width: 620px;
+        height: 350px;
+    }
+    .container-box-galery p{
+        margin:1.8em  4.3em;
+        font-size: 3em;
+    }
+    .container-box{
+        padding-left: 0.5em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 290px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 200px;
+        height: 125px;
+    }
+    .modalDialog > div {
+        width: 650px;
+        height: 550px;
+        margin: 6em auto;
+    }
+    .modalDialog > div >img{
+        width: 650px;
+        height: 550px;
+    }
+    .container-text{
+        float: none;
+        width: 580px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 720px) {
+    .container-box-galery,.container-box-galery img{
+        width: 620px;
+        height: 350px;
+    }
+    .container-box-galery p{
+        margin:1.8em  4.3em;
+        font-size:3em;
+    }
+    .container-box{
+        padding-left: 0.3em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 270px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 204px;
+        height: 125px;
+    }
+    .modalDialog > div {
+        width: 570px;
+        height: 500px;
+        margin: 8em auto;
+    }
+    .modalDialog > div >img{
+       width: 570px;/**/
+       height: 500px;/**/
+    }
+    .close {
+        right: -9px;
+        top: -12px;
+        width: 10%;
+        height: 1.1em;
+        font-size: 2.6em;
+    }
+    .container-text{
+        float: none;
+        width: 560px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+@media screen and (min-width: 540px) and (max-width: 640px) {
+    .container-box-galery,.container-box-galery img{
+        width: 519px;
+        height: 280px;
+    }
+    .container-box-galery p{
+        margin:1.8em  3.3em;
+        font-size:2.8em;
+    }
+    .container-box{
+        padding-left: 6.5em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 250px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 171px;
+        height: 120px;
+    }
+    .modalDialog > div {
+        width: 470px;
+        height: 420px;
+        margin: 8em auto;
+    }
+    .modalDialog > div >img{
+       width: 470px;/**/
+       height: 420px;/**/
+    }
+    .close {
+        right: -8px;
+        top: -12px;
+        width: 11%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 470px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 540px) {
+    .container-box-galery,.container-box-galery img{
+        width: 370px;
+        height: 280px;
+    }
+    .container-box-galery p{
+        margin:2.5em  3.3em;
+        font-size:2.1em;
+    }
+    .container-box{
+        padding-left:2em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 235px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 118px;
+        height: 90px;
+    }
+    .modalDialog > div {
+        width: 430px;
+        height: 400px;
+        margin: 9em auto;
+    }
+    .modalDialog > div >img{
+       width: 430px;/**/
+       height: 400px;/**/
+    }
+    .close {
+        right: -8px;
+        top: -12px;
+        width: 11%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 360px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 500px) {
+    .container-box-galery,.container-box-galery img{
+        width: 360px;
+        height: 280px;
+    }
+    .container-box-galery p{
+        margin:2.5em  3.2em;
+        font-size:2.1em;
+    }
+ .container-box{
+        padding-left:2em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 195px;
+        height: 140px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 118px;
+        height: 90px;
+    }
+    .modalDialog > div {
+        width: 360px;
+        height: 310px;
+        margin: 11em auto;
+    }
+    .modalDialog > div >img{
+       width: 360px;/**/
+       height: 310px;/**/
+    }
+    .close {
+        right: -8px;
+        top: -12px;
+        width: 13%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 330px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+@media screen and (min-width: 384px) and (max-width: 420px) {
+    .container-box-galery,.container-box-galery img{
+        width: 363px;
+        height: 280px;
+    }
+    .container-box-galery p{
+        margin:2.5em  3.2em;
+        font-size:2.1em;
+    }
+    .container-box{
+        padding-left:1.7em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 260px;
+        height: 160px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 104px;
+        height: 80px;
+    }
+    .modalDialog > div {
+        width: 320px;
+        height: 310px;
+        margin: 12em auto;
+    }
+    .modalDialog > div >img{
+       width: 320px;/**/
+       height: 310px;/**/
+    }
+    .close {
+        right: -8px;
+        top: -12px;
+        width: 14%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 300px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+@media screen and (min-width: 340px) and (max-width: 384px) {
+    .container-box-galery,.container-box-galery img{
+        width: 320px;
+        height: 280px;
+    }
+    .container-box-galery p{
+        margin:2.5em  2.6em;
+        font-size:2.1em;
+    }
+.container-box{
+        padding-left:0.6em;
+    }
+    .container-box-min,.container-box-min img{
+        width: 260px;
+        height: 160px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 104px;
+        height: 80px;
+    }
+    .modalDialog > div {
+        width: 280px;
+        height: 280px;
+        margin: 11em auto;
+    }
+    .modalDialog > div >img{
+       width: 280px;/**/
+       height: 280px;/**/
+    }
+    .close {
+        right: -8px;
+        top: -12px;
+        width: 15%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 270px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+    .container-box-galery,.container-box-galery img{
+        width: 260px;
+        height: 250px;
+    }
+    .container-box-galery p{
+        margin:2.3em  2.1em;
+        font-size:2em;
+    }
+    .container-box{
+        width: 250px;
+        height: 250px;
+    }
+    .container-box img{
+        width: 250px;
+        height: 250px;
+    }
+    .container-box img:hover{
+        width: 250px;
+        height: 250px;
+    }
+    .container-box-min,.container-box-min img{
+        width: 250px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container-box-galery-small-icons,.container-box-galery-small-icons div,.container-box-galery-small-icons img{
+        width: 84px;
+        height: 70px;
+    }
+    .modalDialog > div {
+        width: 240px;
+        height: 240px;
+        margin: 11em auto;
+    }
+    .modalDialog > div >img{
+       width: 240px;
+       height: 240px;
+    }
+    .close {
+        right: -5px;
+        top: -12px;
+        width: 16%;
+        height: 1.05em;
+        font-size: 2.5em;
+    }
+    .container-text{
+        float: none;
+        width: 250px;
+        font-size: 1em;
+        margin:1em auto;
+    }
+} 
