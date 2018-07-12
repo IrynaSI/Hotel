@@ -1,0 +1,153 @@
+/*#accordeon-container,
+#galery-rooms,
+#galery-hotel,
+#galery-restaurant,
+#news,{
+    display: block;
+}
+/*#booking{
+    display: none;
+}*/
+#slider {
+    height: 28em;
+}
+.slider-layout {
+    height: 26.5em;
+}
+/************/
+#booking {
+    width: 100%;
+    height: 1000px;
+    /*background-image: url(images/satin.png);*/
+}
+.booking-layout:first-child {
+    width: 920px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.booking-layout:last-child {
+    width: 920px;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.header-container-booking-1 {
+    width: 700px;
+    height: 7.1875em; /*height: 115px;*/
+    background: #4d3c37;
+    margin: 0px auto;
+}
+.header-container-booking-1 form {
+    font-size: 1.125em; /*font-size: 18px;*/
+}
+.header-container-booking-1 form label { /*ділити на 18*/
+    display: block;
+    width: 5.55em; /*width: 100px;*/
+    float: left;
+    text-align: left;
+    padding: 0.27em; /*padding: 5px;*/ 
+    padding-right: 0.55em; /*padding-right: 10px;*/ 
+    font-family: inherit;
+}
+.header-container-booking-1 form p { /*ділити на 18*/
+    margin: 0.55em 0; /*margin: 10px 0;*/
+}
+.header-container-booking-item-1 {
+    height: 5em; /*height: 90px;*/
+    float: left;
+    margin-top: 0.55em; /*margin-top: 10px;*/
+}
+.header-container-booking-item-1 p { /*ділити на 18*/
+    margin-bottom: 0.55em; /*margin-bottom: 10px;*/
+}
+.header-container-booking-item-1 p label { /*ділити на 18*/
+    width: 6.11em; /*width: 110px;*/
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+}
+.header-container-booking-item-1:nth-child(1) { /*ділити на 18*/
+    width: 15em; /*width: 270px;*/
+}
+.header-container-booking-item-1:nth-child(1) p input { /*ділити на 18*/
+    padding: 0.33em; /*padding: 6px;*/
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    width: 6.22em; /*width: 112px;*/
+    background-color: #e6d7d4;
+}
+.header-container-booking-item-1:nth-child(1) p input::-webkit-inner-spin-button,
+.header-container-booking-item-1:nth-child(1) p input::-webkit-clear-button { 
+    display: none; 
+}
+.header-container-booking-item-1:nth-child(1) p input::-moz-inner-spin-button,
+.header-container-booking-item-1:nth-child(1) p input::-moz-clear-button { 
+    display: none; 
+}
+.header-container-booking-item-1:nth-child(2) { /*ділити на 18*/
+    width: 11.11em; /*width: 200px;*/
+}
+.header-container-booking-item-1:nth-child(2) p select{ /*ділити на 18*/
+    font-size: inherit;
+    height: 1.72em; /*height: 31px;*/
+    color: #000;
+    width: 2.5em; /*width: 45px;*/
+    border: 0;
+    background-color: #e6d7d4;
+}
+.header-container-booking-item-1:nth-child(3) { /*ділити на 18*/
+    width: 11.38em; /*width: 205px;*/
+}
+.header-container-booking-item-1:nth-child(3) input{
+    font-family: 'Ubuntu Condensed';
+    font-size: 1.0625em; /*font-size: 17px;*/
+    background: #ede4e2;
+    color: #4d3c37;
+    cursor: pointer;
+    width: 175px;
+    border: 0;
+    height: 33px;
+    margin-top: 28.5px;
+    margin-left: 18px;
+}
+.result {
+    width: 100%;
+    height: 34px;
+    background: #4d3c37;
+    text-align: center;
+    text-transform: uppercase;
+    font: 120% 'Ubuntu Condensed';
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+.room {
+    width: 95%;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #4d3c37;
+    background-color: #fff;
+}
+.room-type {
+    width: 100%;
+    height: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+}
+.room-image {
+    width: 250px;
+    height: 250px;
+    margin: 20px 10px;
+    background-color: pink;
+    float: left;
+}
+.room-description {
+    width: 595px;
+    height: 250px;
+    margin: 20px 0px;
+    background-color: pink;
+    float: left;
+}
