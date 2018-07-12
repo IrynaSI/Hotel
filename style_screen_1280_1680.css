@@ -1,0 +1,81 @@
+@media screen and (min-width: 1280px) and (max-width: 1680px) {
+	/* Header */
+	#header {
+	    height: 2.125em; /*height: 34px;*/
+	}
+	.header_layout {
+		width: 1202px;
+		height: 8.125em;/*height: 130px;*/
+	}
+	.header-container {
+	    width: 87%;
+	}
+	.header-container-logo {
+	    width: 23%;
+	    height: 10.9375em;  /* height: 175px;*/
+	}
+	.header-container-menu {
+	    width: 77%;
+	}
+	.header-container-menu-info {
+	    height: 2.125em; /*height: 34px;*/
+	    padding-top: 0.4em; /*padding-top: 6.4px;*/
+	}
+	.header-container-menu-main>ul>li>a {
+	    padding: 0.8125em 2.25em; /*padding: 13px 36px;*/
+	}
+	.header-container-menu-main>ul>li>ul>li>a {
+	    padding: 0.4375em 2.65625em; /*padding: 7px 42.5px;*/
+	}
+	.header-container-menu-main>ul>li::before {
+	    top: 2.5em;  /*top: 40px;*/
+	}
+	/* Guests slider */
+	.accordeon-content-third,
+	#accordeon-container input:checked ~ .accordeon-content-third{
+	    width: 1200px;
+	    margin: 0 auto;
+	}
+	.guests-slider {
+	    width: 67.8125em; /*width: 1085px;*/
+	}
+	.guests-slider-arrow {
+	    width: 24px;
+	}
+	.guests-slider-layout {
+	   width: 1025px;
+	}
+	.accordeon-content-second,/*стиль в момент закриття*/
+    #accordeon-container  input:checked ~ .accordeon-content-second {
+    width: 1240px;
+    height: 28em;/*472px*/
+}
+    #accordeon-content-second-icons-awards img{
+       width: 14%; 
+       height: 5.5em;
+   	}
+   .news-footer-layout {
+    	width: 1210px;/*1250*/
+    }
+    .news-box2{
+	    width: 44%;
+	    margin-left: 3em;
+    }
+    .news-box2-img{
+	    width: 59%;
+	    float: left;
+	}
+    .news-box2-content{
+	    width: 41%;
+	    font-size: 1.6em;
+	    padding-top:2.5em;
+	    height: 7.7em;
+    }
+    .footer-layout-box4 {
+	    padding-left:4.5em;/*32px*/
+	    padding-right:3em;
+	}
+	#footer{
+    height: 5.7em;/*84px*/
+}
+}
