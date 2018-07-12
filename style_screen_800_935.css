@@ -1,0 +1,114 @@
+@media screen and (min-width: 800px) and (max-width: 936px) {
+	/* Header */
+	#header {
+	    height: 2.125em; /*height: 34px;*/
+	}
+	.header_layout {
+	    width: 780px;
+	}
+	.header-container {
+	    width: 95%;
+	}
+	.header-container-logo {
+	    width: 23%;
+	    height: 7.6875em; /*height: 123px;*/
+	}
+	.header-container-menu {
+		width: 77%;
+	}
+	.header-container-menu-info{
+		height: 2.125em; /*height: 34px;*/
+		width: 2.125em; /*height: 34px;*/
+		text-indent: -999em;
+		margin-left: 93%;
+	    background-image: url(images/short_menu.png);
+	}
+	.header-container-menu-info:hover {
+		cursor: pointer;
+	}
+	#short_menu:checked~.header-container-menu-main>ul{
+		display: block;
+	}
+	.header-container-menu-main>ul {
+	    height: 13.75em; /*height: 220px;*/
+	    margin-left: 73%;
+	    display: none;
+	}
+	.header-container-menu-main>ul>li {
+    	clear: left;
+    	width: 100%;
+	}
+	.header-container-menu-main>ul>li>a {
+	    padding: 0.5625em 1.875em; /*padding: 9px 30px;*/
+	}
+	.header-container-menu-main>ul>li>ul,
+	.header-container-menu-main>ul>li>ul>li,
+	.header-container-menu-main>ul>li:hover>ul,
+	.header-container-menu-main>ul>li::before,
+	.header-container-menu-main>ul>li:first-child::before {
+	    display: none;
+	}
+	/* Guests slider */
+	.accordeon-content-third,
+    #accordeon-container  input:checked ~ .accordeon-content-third {
+	    width: 780px;
+	    margin: 0 auto;
+	}
+	.guests-slider {
+	    width: 42.1875em; /*width: 675px;*/
+	}
+	.guests-slider-arrow {
+	    width: 24px;
+	}
+	.guests-slider-layout {
+	   width: 615px;
+	}
+
+	.accordeon-offsets-content-picture p{
+    	margin:3.2em 2em; /*80px 75px;*/
+    }
+	.accordeon-content-second,/*стиль в момент закриття*/
+	#accordeon-container  input:checked ~ .accordeon-content-second {
+    	width: 770px;
+    	padding-left:0.2em;/*4px*/
+    	padding-right: 0.2em;
+    	height: 35em;
+    }
+	.accordeon-content-second-icons{
+		margin: 0 auto;
+    	width: 490px;
+	}
+	#accordeon-content-second-icons-awards img{
+  	 	border:solid 1px #705852;
+   		width: 26%; /*170px*/
+   		height: 4.5em;/*88px*/
+	}
+	#news{
+    	height: 12.1em;/*230px*/
+    }
+	.news-footer-layout {
+    	width: 780px;/*780*/
+    }
+    .news-box2{
+	    width: 44%;
+	    height: 10em;
+	    margin-left: 2em;
+    }
+    .news-box2-img{
+	    height: 10em;
+	}
+    .news-box2-content{
+	    font-size: 1.2em;
+	    padding-top:2em;
+	    height: 7.7em;
+    }
+    .footer-layout-box4 {
+    	width: 50%;/*25%*/
+    	padding-left:6em;
+    	padding-bottom: 0.5em;
+    	font-size:1em;/*16px*/
+}
+	#footer{
+    	height: 9.4em;/*84px*/
+}
+}
