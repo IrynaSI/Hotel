@@ -1,0 +1,353 @@
+@media screen and (min-width: 384px) and (max-width: 540px) {
+	/* Header */
+	#header {
+	    height: 2.125em; /*height: 34px;*/
+	}
+	@media screen and (min-width: 500px) and (max-width: 540px) {
+		.header_layout {
+		    width: 480px;
+		}
+		.header-container {
+		    width: 95%;
+		}
+		.header-container-logo {
+		    width: 30%;
+		    height: 6em; /*height: 105px;*/
+		}
+		.header-container-menu {
+			width: 70%;
+		}
+		.header-container-menu-main>ul {
+		    height: 13.75em; /*height: 220px;*/
+		    margin-left: 70%;
+		    display: none;
+		    z-index: 200;
+		    background-color: #4d3c37;
+		}
+		#accordeon-container  input:checked ~ .accordeon-content-first {
+    		height: 33em;/* 208px*/
+    		margin-bottom: 1em;/*20px*/
+		}
+		#accordeon-container  div{
+    		margin-bottom: 0.1em;/*20px*/
+    	}
+		.accordeon-offsets-content-picture{
+    		width: 100%;
+    		height: 11em;/*208px*/
+   			float: left;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+		}
+		.accordeon-offsets-content-picture p{
+    		margin:2.8em 0.5em; /*80px 75px;*/
+    	}
+    	.accordeon-content-second,/*стиль в момент закриття*/
+	 	#accordeon-container  input:checked ~ .accordeon-content-second {
+    		width: 480px;
+    		padding-left:0.2em;/*4px*/
+    		padding-right: 0.2em;
+    		height: 45em;
+    	}
+    	.accordeon-content-second-icons{
+			margin: 0 auto;
+    		width: 350px;
+		}
+		#accordeon-content-second-icons-awards img{
+  	 		border:solid 1px #705852;
+   			width: 30%; /*170px*/
+   			height: 4em;/*88px*/
+		}
+   		 #news{
+    		height: 26.5em;/*230px*/
+        }
+		.news-footer-layout {
+    		width: 480px;
+        }
+   		 .news-box2{
+	    	width: 85%;
+	    	height: 12em;
+	    	margin-left: 2.7em;
+	    	margin-bottom:0.5em;
+    	}
+    	.news-box2-img{
+    		width: 68%;
+	    	height: 12em;
+		}
+    	.news-box2-content{
+    		width: 32%;
+	    	font-size: 1.4em;
+	    	padding-top:2em;
+	    	height: 7.7em;
+	    }
+    	.footer-layout-box4 {
+    		width: 50%;/*25%*/
+    		padding-bottom: 0.5em;
+    		padding-left:1.6em;
+    		font-size:1em;/*16px*/
+		}
+		#footer{
+			height: 9.5em;/*84px*/
+	    }
+	}
+	@media screen and (min-width: 420px) and (max-width: 500px) {
+		.header_layout {
+		    width: 400px;
+		}
+		.header-container {
+		    width: 95%;
+		}
+		.header-container-logo {
+		    width: 32%;
+		    height: 5.5em; /*height: 105px;*/
+		}
+		.header-container-menu {
+			width: 68%;
+		}
+		.header-container-menu-main>ul {
+		    height: 13.75em; /*height: 220px;*/
+		    margin-left: 32%;
+		    display: none;
+		    z-index: 200;
+		    background-color: #4d3c37;
+		}
+		#accordeon-container  input:checked ~ .accordeon-content-first {
+    		height: 33em;/* 208px*/
+    		margin-bottom: 1em;/*20px*/
+		}
+		#accordeon-container  div{
+    		margin-bottom: 0.1em;/*20px*/
+    	}
+		.accordeon-offsets-content-picture{
+    		width: 100%;
+    		height: 11em;/*208px*/
+   			float: left;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+		}
+		.accordeon-offsets-content-picture p{
+    		margin:2.8em 0.5em; /*80px 75px;*/
+    	}
+		.accordeon-content-second,/*стиль в момент закриття*/
+	 	#accordeon-container  input:checked ~ .accordeon-content-second {
+    		width: 370px;
+    		padding-left:0.2em;/*4px*/
+    		padding-right: 0.2em;
+    		font-size: 0.95em;
+    		height: 50em;
+    	}
+    	.accordeon-content-second-icons{
+			margin: 0 auto;
+    		width: 360px;
+		}
+		#accordeon-content-second-icons-awards img{
+  	 		border:solid 1px #705852;
+   			width: 30%; /*170px*/
+   			height: 4em;/*88px*/
+		}
+   		 #news{
+    		height: 23em;/*230px*/
+        }
+		.news-footer-layout {
+    		width: 390px;
+        }
+   		 .news-box2{
+	    	width: 85%;
+	    	height: 10em;
+	    	margin-left: 2em;
+	    	margin-bottom:0.7em;
+    	}
+    	.news-box2-img{
+    		width: 68%;
+	    	height: 10em;
+		}
+    	.news-box2-content{
+    		width: 32%;
+	    	font-size: 1.2em;
+	    	padding-top:1.5em;
+	    	height: 8.3em;
+	    }
+    	.footer-layout-box4 {
+    		width: 80%;/*25%*/
+    		padding-bottom: 1em;
+    		padding-left:3em;
+    		text-align: center;
+    		font-size:1em;/*16px*/
+    		/*background-color: red;*/
+		}
+		#footer{
+			height: 19em;/*84px*/
+	    }
+	}
+	@media screen and (min-width: 384px) and (max-width: 420px) {
+		.header_layout {
+		    width: 364px;
+		}
+		.header-container {
+		    width: 95%;
+		}
+		.header-container-logo {
+		    width: 33%;
+		    height: 5.1em; /*height: 105px;*/
+		}
+		.header-container-menu {
+			width: 67%;
+		}
+		.header-container-menu-main>ul {
+		    height: 13.75em; /*height: 220px;*/
+		    margin-left: 25%;
+		    display: none;
+		    z-index: 200;
+		    background-color: #4d3c37;
+		}
+	}
+	
+	.header-container-menu-info{
+		height: 2.125em; /*height: 34px;*/
+		width: 2.125em; /*height: 34px;*/
+		text-indent: -999em;
+		margin-left: 84%;
+	    background-image: url(images/short_menu.png);
+	}
+	.header-container-menu-info:hover {
+		cursor: pointer;
+	}
+	#short_menu:checked~.header-container-menu-main>ul{
+		display: block;
+	}
+	.header-container-menu-main>ul {
+	    height: 13.75em; /*height: 220px;*/
+	    margin-left: 35%;
+	    display: none;
+	    z-index: 200;
+	    background-color: #4d3c37;
+	}
+	.header-container-menu-main>ul>li {
+    	clear: left;
+    	width: 100%;
+	}
+	.header-container-menu-main>ul>li>a {
+	    padding: 0.5625em 1.875em; /*padding: 9px 30px;*/
+	}
+	.header-container-menu-main>ul>li>ul,
+	.header-container-menu-main>ul>li>ul>li,
+	.header-container-menu-main>ul>li:hover>ul,
+	.header-container-menu-main>ul>li::before,
+	.header-container-menu-main>ul>li:first-child::before {
+	    display: none;
+	}
+	/* Form */
+	.header-container-booking {
+	    width: 250px;
+	    /*height: 11.25em;*/ height: 250px;
+	    /*top: 16.875em;*/ top: 150px;
+	    left: 50%;
+	    /*margin-left: -17.1875em;*/ margin-left: -125px;
+	    z-index: -50;
+	}
+	.header-container-booking form {
+	    font-size: 1em; /*font-size: 18px;*/
+	}
+	.header-container-booking-item:nth-child(3) { /*ділити на 18*/
+	    /*width: 100%;*/
+	    height: 40px;
+	    margin-top: 0;
+	}
+	.header-container-booking-item:nth-child(3) input{
+	    font-size: 1.125em; /*font-size: 18px;*/
+	    /*margin-top: 28.5px;*/
+	    margin-left: 40px;
+	    margin-top: 15px;
+	}
+	/* Guests slider */
+	.accordeon-content-third,
+	#accordeon-container input:checked ~ .accordeon-content-third{
+	    width: 283px;
+	    margin: 0 auto;
+	}
+	.guests-slider {
+	    width: 29.375em; /*width: 470px;*/
+	}
+	.guests-slider-arrow {
+	    width: 24px;
+	}
+	.guests-slider-layout {
+	   width: 205px;
+	}
+	/* Slider */
+	#slider {
+	    width: 100%;
+	    height: 30em;
+	}
+	.slider-layout {
+	    width:100%;
+	    height: 28.5em;
+	    overflow:hidden;
+	}
+	#accordeon-container  input:checked ~ .accordeon-content-first {
+    	height: 33em;/* 208px*/
+    	margin-bottom: 1em;/*20px*/
+		}
+		#accordeon-container  div{
+    		margin-bottom: 0.1em;/*20px*/
+    	}
+		.accordeon-offsets-content-picture{
+    		width: 100%;
+    		height: 11em;/*208px*/
+   			float: left;
+    		background-size: cover;
+    		background-repeat: no-repeat;
+		}
+		.accordeon-offsets-content-picture p{
+    		margin:2.8em 0.5em; /*80px 75px;*/
+    	}
+		.accordeon-content-second,/*стиль в момент закриття*/
+	 	#accordeon-container  input:checked ~ .accordeon-content-second {
+    		width: 350px;
+    		padding-left:0.2em;/*4px*/
+    		padding-right: 0.2em;
+    		font-size: 0.95em;
+    		height: 53em;
+    	}
+    	.accordeon-content-second-icons{
+			margin: 0 auto;
+    		width: 350px;
+		}
+		#accordeon-content-second-icons-awards img{
+  	 		border:solid 1px #705852;
+   			width: 30%; /*170px*/
+   			height: 4em;/*88px*/
+		}
+   		 #news{
+    		height: 23em;/*230px*/
+        }
+		.news-footer-layout {
+    		width: 364px;
+        }
+   		 .news-box2{
+	    	width: 80%;
+	    	height: 10em;
+	    	margin-left: 2em;
+	    	margin-bottom:0.7em;
+    	}
+    	.news-box2-img{
+    		width: 68%;
+	    	height: 10em;
+		}
+    	.news-box2-content{
+    		width: 32%;
+	    	font-size: 1.15em;
+	    	padding-top:1.9em;
+	    	height: 8.3em;
+	    }
+    	.footer-layout-box4 {
+    		width: 80%;/*25%*/
+    		padding-bottom: 1em;
+    		padding-left:3em;
+    		text-align: center;
+    		font-size:1em;/*16px*/
+		}
+		#footer{
+			height: 20em;/*84px*/
+	    }
+	}
+}
