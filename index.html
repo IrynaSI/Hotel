@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <meta name="description" content="П'ятизірковий готель у центрі Львова" />
+    <meta name="keywords" content />
+    <title>Grand Palace Hotel</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="galery/galery_rooms_style/galery_rooms_style.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_1280_1680.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_800_935.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_640_800.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_540_640.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_384_540.css">
+    <link rel="stylesheet" type="text/css" href="style_screen_280_384.css">
+    <link rel="stylesheet" type="text/css" href="style_booking.css">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script src="main.js"></script>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Хедер -->
+    <header id="header">
+        <div class="header_layout">
+            <div class="header-container">
+                <a class="header-container-logo" id="header-container-logo" href="#main"></a>
+                <div class="header-container-menu">
+                    <label for="short_menu" type="checkbox" class="header-container-menu-info">
+                        пр. Свободи, 50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; тел.: +38 (032) 667 45 90 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e-mail: grandpalacelvivhotel@.com.ua
+                    </label>
+                    <input id="short_menu" type="checkbox" name="menu">
+                    <!-- Меню -->
+                    <div class="header-container-menu-main">
+                        <ul>
+                            <li id="hotel-li"><a href="#hotel-information">Готель</a>
+                                <ul>
+                                    <li class="hotel-about-li"><a href="#hotel-about">Про готель</a></li>
+                                    <li class="hotel-history-li"><a href="#hotel-history">Історія</a></li>
+                                    <li class="hotel-events-li"><a href="#hotel-events">Події</a></li>
+                                </ul>
+                            </li>
+                            <li id="rooms-li"><a href="#rooms">Номери</a>
+                                <ul>
+                                    <li class="room-single-li"><a href="#room-single">Одномісний</a></li>
+                                    <li class="room-double-li"><a href="#room-double">Двомісний</a></li>
+                                    <li class="room-twin-li"><a href="#room-twin">Твін</a></li>
+                                    <li class="room-semiluxury-li"><a href="#room-semiluxury">Напівлюкс</a></li>
+                                    <li class="room-luxury-li"><a href="#room-luxury">Люкс "Опера"</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Бронювання</a></li>
+                            <li id="services-li"><a href="#">Послуги</a>
+                                <ul>
+                                    <li class="gym-services-li"><a href="#gym-services">Тренажерна зала</a></li>
+                                    <li class="beauty-salon-services-li"><a href="#beauty-salon-services">Салон краси</a></li>
+                                    <li class="massage-services-li"><a href="#massage-services">Послуги масажу</a></li>
+                                    <li class="pets-services-li"><a href="#pets-services">Розміщення з тваринами</a></li>
+                                    <li class="kids-services-li"><a href="#kids-services">Сервіси для немовлят</a></li>
+                                    <li class="excursions-services-li"><a href="#excursions-services">Екскурсії</a></li>
+                                </ul>
+                            </li>
+                            <li id="galery-li"><a href="#galery">Галерея</a></li>
+                            <li id="contacts-li"><a href="#">Контакти</a></li>
+                        </ul>
+                    </div> 
+                </div>
+                <!-- Бронювання -->
+                <div id="header-container-booking" class="header-container-booking">
+                    <form>
+                        <div class="header-container-booking-item">
+                            <p>
+                                <label>Заїзд:</label>
+                                <input type="date" name="">
+                            </p>
+                            <p>
+                                <label>Виїзд:</label>
+                                <input type="date" name="">
+                            </p>
+                        </div>
+                        <div class="header-container-booking-item">
+                            <p>
+                                <label>Дорослі:</label>
+                                <select name="adults[]">
+                                    <option value="1" selected="selected">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>Діти:</label>
+                                <select name="children[]">
+                                   <option value="0" selected="selected">0</option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                </select>
+                            </p>
+                        </div> 
+                        <div class="header-container-booking-item">
+                            <input type="submit" name="" value="Перевірити наявність">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Слайдер -->
+    <section id="slider">
+        <div class="slider-layout">
+             <div class="slider-container">
+                <div class="slider-container-mask">
+                    <ul>
+                        <li id="first" class="firstanimation">
+                            <img src="images/slider/panorama1.jpg" alt="Cougar"/>
+                        </li><li id="second" class="secondanimation">
+                            <img src="images/slider/panorama2.jpg" alt="Lions"/>
+                        </li><li id="third" class="thirdanimation">
+                            <img src="images/slider/panorama3.jpg" alt="Snowalker"/>
+                        </li>                     
+                        <li id="fourth" class="fourthanimation">
+                            <img src="images/slider/panorama4.jpg" alt="Howling"/>
+                        </li> 
+                        <li id="fifth" class="fifthanimation">
+                            <img src="images/slider/panorama5.jpg" alt="Howling"/>
+                        </li>        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-bottom"></div>
+    </section>
+    <!-- Акордеон -->
+    <section id="accordeon-container">
+            <div>
+                <input id="accordeon-1" name="accordeon-1" type="checkbox" checked />
+                <label class="container-label" for="accordeon-1">спецпропозиції</label>
+                <article class="accordeon-content-first">
+                    <div class="accordeon-offsets-content-picture" id="accordeon-offsets-content-picture1">
+                        <p>
+                             Трансфер до готелю
+                        </p>
+                    </div>
+                    <div class="accordeon-offsets-content-picture" id="accordeon-offsets-content-picture2">
+                        <p>
+                             Панорамне літо
+                        </p>
+                    </div>
+                    <div class="accordeon-offsets-content-picture" id="accordeon-offsets-content-picture3">  
+                        <p>
+                             Подарунковий сертифікат
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <input id="accordeon-2" name="accordeon-2" type="checkbox" checked />
+                <label  class="container-label" for="accordeon-2">про нас</label>
+                <article class="accordeon-content-second">
+                    <p>
+                        <br>
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span> – це вишуканий готель у самому центрі історичного Львова, який ідеально підходить як для ділових поїздок, так і романтичного відпочинку чи подорожей з дітьми.
+                    </p><br>
+                    <p>
+                        <span class="accordeon-content-second-span">Ми пропонуємо </span> зручні номери в стилі контемпорарі, де використані тільки натуральні, екологічно чисті матеріали, в кожному номері є супутникове телебачення та WI-FI. З номерів готелю відкривається приголомшливий вигляд на львівську Оперу та центральну частину міста. На 7-му поверсі готелю знаходиться <span class="accordeon-content-second-span">ресторан «GRAND PALACE»</span>. Вишукане меню, багата винна карта і  тераса з розкішною панорамою, роблять його одним із найбільш інтригуючих та романтичних місць у Львові.
+                    </p><br>
+                    <p>
+                        Також до Ваших послуг конференц-зал та VIP кімната переговорів для проведення ділових зустрічей будь-якого рівня і складності.<br>
+                        <span class="accordeon-content-second-span">Готель «GRAND PALACE» </span>– це взірець європейського комфорту і затишку.
+                    </p><br>
+                    <p class="accordeon-content-second-icons">
+                        <img src="images/icons/icons_01.jpg" alt="tickets" title="Квитки" />
+                        <img src="images/icons/icons_02.jpg" alt="massage" title="Масаж" />
+                        <img src="images/icons/icons_03.jpg" alt="transfer" title="Трансфер" />
+                        <img src="images/icons/icons_04.jpg" alt="gym" title="Тренажерна зала" />
+                        <img src="images/icons/icons_05.jpg" alt="wifi" title="Wi-Fi" />
+                        <img src="images/icons/icons_06.jpg" alt="restaurant" title="Ресторан" />
+                        <img src="images/icons/icons_07.jpg" alt="ironing service" title="Послуги прасування" />
+                        <img src="images/icons/icons_08.jpg" alt="laundry service" title="Послуги прання" />
+                        <img src="images/icons/icons_09.jpg" alt="nanny" title="Няня" />
+                        <img src="images/icons/icons_10.jpg" alt="barber shop" title="Салон краси" />
+                        <img src="images/icons/icons_12.jpg" alt="conference room" title="Конференц зала" />
+                        <img src="images/icons/icons_13.jpg" alt="excursions" title="Екскурсії" />
+                        <img src="images/icons/icons_14.jpg" alt="clothes repair" title="Дрібний ремонт одягу" />
+                        <img src="images/icons/icons_15.jpg" alt="payment by credit card" title="Оплата кредитною карткою" />
+                        <img src="images/icons/icons_16.jpg" alt="phone in room" title="Телефон в номері" />
+                        <img src="images/icons/icons_17.jpg" alt="adaptation for challenged" title="Пристосування для неповносправних" />
+                        <img src="images/icons/icons_18.jpg" alt="mini-bar" title="Міні-бар" />
+                        <img src="images/icons/icons_19.jpg" alt="accommodation with animals" title="Розміщення з тваринами" />
+                        <img src="images/icons/icons_20.jpg" alt="conditioner" title="Кондиціонер" />
+                        <img src="images/icons/icons_21.jpg" alt="book online" title="Бронювання он-лайн" />
+                        <img src="images/icons/icons_22.jpg" alt="breakfast" title="Сніданки" />
+                        <img src="images/icons/icons_24.jpg" alt="parking" title="Паркінг" />
+                    </p><br>
+                    <p class="accordeon-content-second-icons" id="accordeon-content-second-icons-awards">
+                        <img src="images/awards/award_01.jpg" alt="award" title="Hotel award" />
+                        <img src="images/awards/award_02.jpg" alt="award" title="Hotel award" />
+                        <img src="images/awards/award_03.png" alt="award" title="Hotel award" />
+                    </p>
+                </article>
+            </div>
+            <div>
+                <input id="accordeon-3" name="accordeon-3" type="checkbox" checked />
+                <label class="container-label" for="accordeon-3">наші зіркові гості</label>
+                <article class="accordeon-content-third">
+                    <div class="guests-slider">
+                        <div class="guests-slider-arrow">
+                            <img src="images/arrow-left.png">
+                        </div>
+                        <div class="guests-slider-layout">
+                            <div class="guests-slider-layout-items">
+                                <div>
+                                    <img src="images/guest/1.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/2.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/3.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/4.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/5.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/6.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/7.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/8.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/9.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/10.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/11.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/12.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/13.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/14.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/15.jpg">
+                                </div>
+                                <div>
+                                    <img src="images/guest/16.jpg">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="guests-slider-arrow">
+                            <img src="images/arrow-right.png">
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </section>
+    <!-- Новини -->
+    <section id="news">
+            <div class="news-footer-layout">
+                <div class="news-box2">
+                    <a href="#">
+                        <div class="news-box2-img" id="news-box-img-1">
+                        </div>
+                        <div class="news-box2-content">
+                        Спа-зона у готелі «GRAND PALACE Lviv Hotel»
+                        </div>
+                    </a>
+
+                </div>
+                <div class="news-box2">
+                    <a href="#">
+                        <div class="news-box2-img" id="news-box-img-2">
+                       </div>
+                       <div class="news-box2-content">
+                        Жива музика у ресторані «GRAND PALACE»
+                       </div>
+                </div>
+            </div>
+    </section>
+    <!-- Готель -->
+    <section id="hotel-information" class="common-container">
+            <label class="container-label">Готель</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                    <a href="#hotel-about" class="hotel-about-li">
+                        <p>
+                            &nbsp; Про готель
+                        </p>
+                    <img src="images/galery/hotel/hotel-05.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#hotel-history" class="hotel-history-li">
+                        <p>
+                            &nbsp; &nbsp; Історія
+                        </p>
+                    <img src="images/galery/hotel/history.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#hotel-events" class="hotel-events-li">
+                        <p>
+                            &nbsp; &nbsp; &nbsp; Події
+                        </p>
+                    <img src="images/galery/hotel/events.jpg" >
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- Готель про -->
+    <section id="hotel-about">
+            <label class="container-label">Про готель</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-hotel-07">
+                           <img src="images/galery/hotel/hotel-07.JPG" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Затишок та комфорт</span> –  є невід’ємними ознаками «GRAND PALACE Lviv Hotel». За 100-річну історію готель змінював і назви і зовнішній вигляд, але незмінним залишався сервіс та любов до кожного нашого гостя.<br>
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel» </span>– готель, в основу успіху якого лягли: бездоганний європейський сервіс, чудове розміщення, поруч з львівським театром опери та балету, щоденна злагоджена праця всієї команди готелю та особлива увага до наших гостей. <br>
+
+                        <span class="accordeon-content-second-span">Нашим гостям ми пропонуємо:</span>
+                        <ul>
+                            <li>51 номер у стилі контемпорарі: 12 одномісних номерів; 21двомісний номер; 8 номерів «Твін» (два окремих ліжка); 5 півлюксів; 5 люксів «Опера».</li>
+                            <li>Ресторан «Панорама» з терасою та видом на центр міста (на 80 гостей)</li>
+                            <li>Конференц-зал у самому центрі Львова з усім необхідним для конференц-сервісу (до 50 учасників)</li>
+                            <li>Кімната переговорів (до 10 учасників)Обладнаний тренажерний зал.</li>
+                        </ul>
+                </div>  
+            </div>
+                <div id="open-modal-hotel-07" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-07.JPG" alt="hotel photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Готель історія -->
+    <section id="hotel-history">
+            <label class="container-label">Історія</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-history">
+                           <img src="images/galery/hotel/history.jpg" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»  - 100 років європейського сервісу!</span><br>
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel» </span> – це класичний готель з 100-літньою історією, який є частиною архітектурного ансамблю міста та входить до  всесвітньої спадщини ЮНЕСКО. Офіційним початком будівництва вважають 1875 р., проте вже з 1909 по 1914 рр. будівля зазнала реконструкції, яку проводила фірма "Уляма" в дусі модернового класицизму. З того часу і до середини ХХ ст. готель мав назву "New York". Цікавим фактом з історії готелю є те, що вже у середині 20-х років минулого століття тут вперше у Львові кожен номер був обладнаний телефонним зв’язком, що набагато випереджало свій час.<br>
+                        Місце розташування готелю в кількох метрах від перлини Львова – Оперного театру. Bеликі панорамні вітражні вікна, з яких відкривається пречудова панорама на центр Львова з його центральним проспектом, Оперою, соборами та вежами, –  <span class="accordeon-content-second-span">є особливістю нашого готелю!</span>
+                </div>  
+            </div>
+                <div id="open-modal-history" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/history.jpg" alt="hotel photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Готель події -->
+    <section id="hotel-events">
+            <label class="container-label">Події</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-events-braille">
+                           <img src="images/galery/hotel/events-braille.jpg" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        9 березня 2017 року Львові в приміщенні«GRAND PALACE Lviv Hotel» відбулося урочисте вручення  <span class="accordeon-content-second-span">принтера Брайля Львівському обласному осередку ВГО «Українська спілка інвалідів – УСІ».</span><br>
+                        Гроші на принтер були зібрані в рамках проекту Міжнародного благодійного фонду «Давай допоможемо» «BLACK BOX Львів». Серед головних меценатів був <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel» </span><br> 
+                        Мета проекту – популяризувати читання серед людей з вазами зору, забезпечити їм доступ до книг, надрукованих шрифтом Брайля.
+                </div>  
+            </div>
+                <div id="open-modal-events-braille" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/events-braille.jpg" alt="hotel photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Номери -->
+    <section id="rooms" class="common-container">
+            <label class="container-label">Номери</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                    <a href="#room-single" class="room-single-li">
+                        <p>
+                            Одномісний
+                        </p>
+                    <img src="images/galery/rooms/room-10.jpg" alt="room photo" >
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#room-double" class="room-double-li">
+                        <p>
+                            Двосмісний
+                        </p>
+                    <img src="images/galery/rooms/room-15.jpg" alt="room photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#room-twin" class="room-twin-li">
+                        <p>
+                            &nbsp; &nbsp;  &nbsp; Твін
+                        </p>
+                    <img src="images/galery/rooms/room-14.jpg" alt="room photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#room-semiluxury" class="room-semiluxury-li">
+                        <p>
+                            Напівлюкс
+                        </p>
+                    <img src="images/galery/rooms/room-08.jpg" alt="room photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#room-luxury" class="room-luxury-li">
+                        <p>
+                            &nbsp; &nbsp;Люкс<br>&nbsp; "Опера"
+                        </p>
+                    <img src="images/galery/rooms/room-13.jpg" alt="room photo">
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- Номери одномісний -->
+    <section id="room-single">
+            <label class="container-label">Одномісний</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-room-10-single">
+                           <img src="images/galery/rooms/room-10.jpg" alt="room photo" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Одномісний номер готелю «GRAND PALACE Lviv Hotel» </span>забезпечить Вам спокійний відпочинок подалі від вуличного шуму. Номери з односпальним ліжком , що виходять вікнами у внутрішній дворик, підійдуть для тих, хто цінує свій час та комфорт. <br>
+                        <span class="accordeon-content-second-span">В кожному одномісному номері Ви знайдете:</span><br> 
+                        <ul>
+                            <li>Контемпорарі дизайн</li>
+                            <li>Система кондиціонування / опалення</li>
+                            <li>Комфортабельні ліжка</li>
+                            <li>LED телевізор з діагоналлю 32` та можливістю підключення USB носія, кабельне TV та необмежений доступ до мережі Інтернет(Wi-Fi)</li>
+                            <li>Гардероб, мінібар </li><li>Телефон з прямим міським набором</li>
+                            <li>Робоча зона з письмовим столом</li>
+                            <li>Повністю обладнана ванна кімната з душовою кабіною</li>
+                            <li>Набір косметичних засобів для особистої гігієни, фен,халат,тапочки</li>
+                        </ul>  
+                        <span class="accordeon-content-second-span">Загальна кількість номерів:</span> 12<br>
+                        Послуги: прання, прасування, room-service<br>
+                        Бронюйте <span class="accordeon-content-second-span">Одномісний номер готелю «GRAND PALACE Lviv Hotel»</span>  на нашому  сайті і ми гарантуємо Вам найвигідніші умови та тарифи!
+                </div> 
+                <div  class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-room-11-single">
+                           <img src="images/galery/rooms/room-11.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-19-single">
+                           <img src="images/galery/rooms/room-19.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-20-single">
+                           <img src="images/galery/rooms/room-20.jpg" alt="room photo" >
+                        </a>
+                       </div>
+
+                </div>
+            </div>
+                <div id="open-modal-room-10-single" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-10.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-11-single" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-11.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-19-single" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-19.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-20-single" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-20.jpg" alt="room photo" >
+                    </div>
+                </div>
+            </div>
+            <label class="container-label">До ваших послуг</label>
+            <div class="container-min">
+                  <div class="container-box-min">
+                    <a href="#room-double"  class="room-double-li">
+                        <p>Двомісний</p>
+                    <img src="images/galery/rooms/room-15.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-14" class="room-twin-li">
+                        <p>Твін</p>
+                    <img src="images/galery/rooms/room-14.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-08" class="room-semiluxury-li">
+                        <p>Напівлюкс</p>
+                    <img src="images/galery/rooms/room-08.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-01" class="room-luxury-li">
+                        <p>Люкс "Опера"</p>
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div> 
+            </div>
+    </section>
+    <!-- Номери двоомісний -->
+    <section id="room-double">
+            <label class="container-label">Двомісний</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-room-15-double">
+                           <img src="images/galery/rooms/room-15.jpg" alt="room photo" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Двомісний номер готелю «GRAND PALACE Lviv Hotel»</span> - це приклад традиційної зручності і затишку. Такий номер ідеально підійде як для відпочинку, так і для роботи. Також є можливість розмістити третю особу на додатковому ліжку.<br>
+                        <span class="accordeon-content-second-span">В кожному двомісному номері Ви знайдете:</span><br> 
+                        <ul>
+                            <li>Контемпорарі дизайн</li>
+                            <li>Система кондиціонування / опалення</li>
+                            <li>Комфортабельні ліжка</li>
+                            <li>LED телевізор з діагоналлю 32` та можливістю підключення USB носія, кабельне TV та необмежений доступ до мережі Інтернет(Wi-Fi)</li>
+                            <li>Гардероб, мінібар </li><li>Телефон з прямим міським набором</li>
+                            <li>Робоча зона з письмовим столом</li>
+                            <li>Повністю обладнана ванна кімната з душовою кабіною</li>
+                            <li>Набір косметичних засобів для особистої гігієни</li>
+                            <li>Фен,халат,тапочки</li>
+                        </ul>  
+                        <span class="accordeon-content-second-span">Загальна кількість номерів:</span> 21<br>
+                        Послуги: прання, прасування, room-service<br>
+                        Бронюйте <span class="accordeon-content-second-span">Двомісний номер готелю «GRAND PALACE Lviv Hotel»</span>  на нашому  сайті і ми гарантуємо Вам найвигідніші умови та тарифи!
+                </div> 
+                <div  class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-room-12-double">
+                           <img src="images/galery/rooms/room-12.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-17-double">
+                           <img src="images/galery/rooms/room-17.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-18-double">
+                           <img src="images/galery/rooms/room-18.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                </div>
+            </div>
+                <div id="open-modal-room-15-double" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-15.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-12-double" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-12.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-17-double" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-17.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-18-double" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-18.jpg" alt="room photo" >
+                    </div>
+                </div>
+            </div>
+            <label class="container-label">До ваших послуг</label>
+            <div class="container-min">
+                  <div class="container-box-min">
+                    <a href="#room-single" class="room-single-li">
+                         <p>Одномісний</p>
+                    <img src="images/galery/rooms/room-10.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-14" class="room-twin-li">
+                        <p>Твін</p>
+                    <img src="images/galery/rooms/room-14.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-08" class="room-semiluxury-li">
+                        <p>Напівлюкс</p>
+                    <img src="images/galery/rooms/room-08.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-01" class="room-luxury-li">
+                        <p>Люкс "Опера"</p>
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div> 
+            </div>
+    </section>
+    <!-- Номери твін -->
+    <section id="room-twin">
+            <label class="container-label">Твін</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-room-14-twin">
+                           <img src="images/galery/rooms/room-14.jpg" alt="room photo" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Твін номер готелю «GRAND PALACE Lviv Hotel» </span>Зручний, комфортабельний номер з двома окремими ліжками. Затишний інтер’єр, особлива атмосфера та вид на колоритну львівську вуличку. <br>
+                        <span class="accordeon-content-second-span">В кожному твін номері Ви знайдете:</span><br> 
+                        <ul>
+                            <li>Контемпорарі дизайн</li>
+                            <li>Система кондиціонування / опалення</li>
+                            <li>Комфортабельні ліжка</li>
+                            <li>LED телевізор з діагоналлю 32` та можливістю підключення USB носія, кабельне TV та необмежений доступ до мережі Інтернет(Wi-Fi)</li>
+                            <li>Гардероб, мінібар </li><li>Телефон з прямим міським набором</li>
+                            <li>Робоча зона з письмовим столом</li>
+                            <li>Повністю обладнана ванна кімната з душовою кабіною</li>
+                            <li>Набір косметичних засобів для особистої гігієни, фен,халат,тапочки</li>
+                        </ul>  
+                        <span class="accordeon-content-second-span">Загальна кількість номерів:</span> 8<br>
+                        Послуги: прання, прасування, room-service<br>
+                        Бронюйте <span class="accordeon-content-second-span">Твін номер готелю «GRAND PALACE Lviv Hotel»</span>  на нашому  сайті і ми гарантуємо Вам найвигідніші умови та тарифи!
+                </div> 
+                <div class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-room-05-twin">
+                           <img src="images/galery/rooms/room-05.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-12-twin">
+                           <img src="images/galery/rooms/room-12.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-21-twin">
+                           <img src="images/galery/rooms/room-21.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                </div>
+            </div>
+                <div id="open-modal-room-14-twin" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-14.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-05-twin" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-05.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-12-twin" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-12.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-21-twin" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-21.jpg" alt="room photo" >
+                    </div>
+                </div>
+            </div>
+            <label class="container-label">До ваших послуг</label>
+            <div class="container-min">
+                <div class="container-box-min">
+                    <a href="#room-single" class="room-single-li">
+                         <p>Одномісний</p>
+                    <img src="images/galery/rooms/room-10.jpg" >
+                    </a>
+                </div>
+                  <div class="container-box-min">
+                    <a href="#room-double" class="room-double-li">
+                        <p>Двомісний</p>
+                    <img src="images/galery/rooms/room-15.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-08" class="room-semiluxury-li">
+                        <p>Напівлюкс</p>
+                    <img src="images/galery/rooms/room-08.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-01" class="room-luxury-li">
+                        <p>Люкс "Опера"</p>
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div> 
+            </div>
+    </section>
+    <!-- Номери Напівлюкс -->
+    <section id="room-semiluxury">
+            <label class="container-label">Напівлюкс</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-room-08-semiluxury">
+                           <img src="images/galery/rooms/room-08.jpg" alt="room photo" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Напівлюкс номер готелю «GRAND PALACE Lviv Hotel» </span>Просторий номер із великою зоною відпочинку, вікна якого виходять на центральний проспект міста та неперевершений Львівський Оперний театр. Для істинних шанувальників традицій та класики. <br>
+                        Площа номеру дозволяє при потребі розмістити додаткове ліжко.<br>
+                        <span class="accordeon-content-second-span">В кожному напівлюкс номері Ви знайдете:</span><br> 
+                        <ul>
+                            <li>Контемпорарі дизайн</li>
+                            <li>Система кондиціонування / опалення</li>
+                            <li>Комфортабельні ліжка</li>
+                            <li>LED телевізор з діагоналлю 32` та можливістю підключення USB носія, кабельне TV та необмежений доступ до мережі Інтернет(Wi-Fi)</li>
+                            <li>Гардероб</li>
+                            <li>Мінібар </li>
+                            <li>Сейф</li>
+                            <li>Телефон з прямим міським набором</li>
+                            <li>Робоча зона з письмовим столом</li>
+                            <li>Повністю обладнана ванна кімната з душовою кабіною</li>
+                            <li>Набір косметичних засобів для особистої гігієни</li>
+                            <li> Фен,халат,тапочки</li>
+
+                        </ul>  
+                        <span class="accordeon-content-second-span">Загальна кількість номерів:</span> 5<br>
+                        Послуги: прання, прасування, room-service<br>
+                        Бронюйте <span class="accordeon-content-second-span">Напівлюкс номер готелю «GRAND PALACE Lviv Hotel»</span>  на нашому  сайті і ми гарантуємо Вам найвигідніші умови та тарифи!
+                </div> 
+                <div class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-room-09-semiluxury">
+                           <img src="images/galery/rooms/room-09.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-13-semiluxury">
+                           <img src="images/galery/rooms/room-13.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-22-semiluxury">
+                           <img src="images/galery/rooms/room-22.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-23-semiluxury">
+                           <img src="images/galery/rooms/room-23.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                        <div>
+                        <a href="#open-modal-room-24-semiluxury">
+                           <img src="images/galery/rooms/room-24.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                        <div>
+                        <a href="#open-modal-room-25-semiluxury">
+                           <img src="images/galery/rooms/room-25.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                </div>
+            </div>
+                <div id="open-modal-room-08-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-08.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-09-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-09.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-13-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-13.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-22-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-22.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-23-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-23.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-24-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-24.jpg" alt="room photo" >
+                    </div>
+                </div>
+                 <div id="open-modal-room-25-semiluxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-25.jpg" alt="room photo" >
+                    </div>
+                </div>
+            </div>
+            <label class="container-label">До ваших послуг</label>
+            <div class="container-min">
+                <div class="container-box-min">
+                    <a href="#room-single" class="room-single-li">
+                         <p>Одномісний</p>
+                    <img src="images/galery/rooms/room-10.jpg" >
+                    </a>
+                </div>
+                  <div class="container-box-min">
+                    <a href="#room-double" class="room-double-li">
+                        <p>Двомісний</p>
+                    <img src="images/galery/rooms/room-15.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#room-twin" class="room-twin-li">
+                        <p>Твін</p>
+                    <img src="images/galery/rooms/room-14.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#open-modal-room-01" class="room-luxury-li">
+                        <p>Люкс "Опера"</p>
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div> 
+            </div>
+    </section>
+    <!-- Номери люкс -->
+    <section id="room-luxury">
+            <label class="container-label">Люкс "Опера"</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-room-01-luxury">
+                           <img src="images/galery/rooms/room-01.jpg" alt="room photo" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">Люкс номер готелю «GRAND PALACE Lviv Hotel» </span>Вишуканий двокімнатний люкс з просторою зоною відпочинку. В одній із кімнат можна приймати гостей та проводити невеликі ділові зустрічі тет-а-тет. Перевагою є також французькі балкончики, які дають змогу спостерігати за життям міста. Особливо романтичними є мансардні номери, а тепла ванна дозволить втекти від рутини та сповна насолодитися відпочинком.<br>
+                        Площа номеру дозволяє при потребі розмістити додаткові ліжка.<br>
+                        <span class="accordeon-content-second-span">В кожному напівлюкс номері Ви знайдете:</span><br> 
+                        <ul>
+                            <li>Контемпорарі дизайн</li>
+                            <li>Система кондиціонування / опалення</li>
+                            <li>Комфортабельні ліжка</li>
+                            <li>LED телевізор з діагоналлю 32` та можливістю підключення USB носія, кабельне TV та необмежений доступ до мережі Інтернет(Wi-Fi)</li>
+                            <li>Гардероб, мінібар, сейф</li>
+                            <li>Телефон з прямим міським набором</li>
+                            <li>Робоча зона з письмовим столом</li>
+                            <li>Повністю обладнана ванна кімната з душовою кабіною</li>
+                            <li>Набір косметичних засобів для особистої гігієни</li>
+                            <li> Фен,халат,тапочки</li>
+                        </ul>  
+                        <span class="accordeon-content-second-span">Загальна кількість номерів:</span> 5<br>
+                        Послуги: прання, прасування, room-service<br>
+                        Бронюйте <span class="accordeon-content-second-span">Люкс номер готелю «GRAND PALACE Lviv Hotel»</span>  на нашому  сайті і ми гарантуємо Вам найвигідніші умови та тарифи!
+                </div> 
+                <div class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-room-26-luxury">
+                           <img src="images/galery/rooms/room-26.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-02-luxury">
+                           <img src="images/galery/rooms/room-02.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-03-luxury">
+                           <img src="images/galery/rooms/room-03.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-room-16-luxury">
+                           <img src="images/galery/rooms/room-16.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                        <div>
+                        <a href="#open-modal-room-27-luxury">
+                           <img src="images/galery/rooms/room-27.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                        <div>
+                        <a href="#open-modal-room-28-luxury">
+                           <img src="images/galery/rooms/room-28.jpg" alt="room photo" >
+                        </a>
+                       </div>
+                </div>
+            </div>
+                <div id="open-modal-room-01-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-01.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-26-luxury"" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-26.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-02-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-02.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-03-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-03.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-16-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-16.jpg" alt="room photo" >
+                    </div>
+                </div>
+                <div id="open-modal-room-27-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-27.jpg" alt="room photo" >
+                    </div>
+                </div>
+                 <div id="open-modal-room-28-luxury" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-28.jpg" alt="room photo" >
+                    </div>
+                </div>
+            </div>
+            <label class="container-label">До ваших послуг</label>
+            <div class="container-min">
+                <div class="container-box-min">
+                    <a href="#room-single" class="room-single-li">
+                         <p>Одномісний</p>
+                    <img src="images/galery/rooms/room-10.jpg" >
+                    </a>
+                </div>
+                  <div class="container-box-min">
+                    <a href="#room-double" class="room-double-li">
+                        <p>Двомісний</p>
+                    <img src="images/galery/rooms/room-15.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#room-twin" class="room-twin-li">
+                        <p>Твін</p>
+                    <img src="images/galery/rooms/room-14.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-min">
+                    <a href="#room-semiluxury" class="room-semiluxury-li">
+                        <p>Напівлюкс</p>
+                    <img src="images/galery/rooms/room-08.jpg" >
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги-->
+    <section id="services" class="common-container">
+            <label class="container-label">Послуги</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                    <a href="#gym" class="gym-services-li">
+                        <p>
+                            Тренажерна <br> зала
+                        </p>
+                    <img src="images/galery/hotel/hotel-04.jpg" alt="gym photo" >
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#beauty-salon" class="beauty-salon-services-li">
+                        <p>
+                            Cалон краси
+                        </p>
+                    <img src="images/galery/hotel/beauty-salon.jpg" alt="beauty salon photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#massage-services" class="massage-services-li">
+                        <p>
+                           &nbsp; Послуги <br> масажу
+                        </p>
+                    <img src="images/news/massage.jpg" alt="massage photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#pets-services" class="pets-services-li">
+                        <p>
+                            Розміщення<br>з тваринами
+                        </p>
+                    <img src="images/news/pets-services.jpg" alt="pets services photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#kids-services" class="kids-services-li">
+                        <p>
+                            Сервіс для<br>  немовлят
+                        </p>
+                    <img src="images/news/kids-services.jpg" alt="kids services photo">
+                    </a>
+                </div>
+                <div class="container-box-galery">
+                    <a href="#excursions-services" class="excursions-services-li">
+                        <p>
+                            Екскурсії
+                        </p>
+                    <img src="images/news/excursions.jpg" alt="excursions photo">
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги тренажерна зала -->
+    <section id="gym-services">
+            <label class="container-label">Тренажерна зала</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-hotel-04-gym-services">
+                           <img src="images/galery/hotel/hotel-04.jpg" >
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        Для того, щоб перебування гостей в нашому готелі проходило з користю для здоров’я, ми підготували обладнану тренажеру залу.<br>
+
+                        <span class="accordeon-content-second-span">До Ваших послуг комплекс спортивних тренажерів:</span>
+                        <ul>
+                            <li>Орбітрек</li>
+                            <li>Бігова доріжка</li>
+                            <li>Вертикальний велосипед</li>
+                            <li>Жим ногами</li>
+                            <li>Жим сидячи</li>
+                            <li>Машина Смітта</li>
+                            <li>Лавка із змінним кутом</li>
+                            <li>Лавка з від’ємним кутом</li>
+                            <li>Гіперекстензія</li>
+                        </ul>
+                        Усе необхідне для підтримання чудової форми. Поруч із залом працює масажний кабінет. Для наших гостей користування тренажерною залою - БЕЗКОШТОВНЕ!
+                </div>  
+            </div>
+                <div id="open-modal-hotel-04-gym-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-04.JPG" alt="gym photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+     <!-- Послуги салон краси -->
+    <section id="beauty-salon-services">
+            <label class="container-label">Салон краси</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-beauty-salon-services">
+                           <img src="images/galery/hotel/beauty-salon.jpg" alt="beauty salon photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        Запрошуємо завітати до салону краси, що знаходиться на 1-му поверсі готелю <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span>.<br>
+                        <span class="accordeon-content-second-span">До Ваших послуг:</span>
+                        <ul>
+                            <li>професійні перукарські послуги</li>
+                            <li>манікюр і педикюр</li>
+                            <li>візаж будь-якої складності</li>
+                            <li>SPA-процедури</li>
+                            <li>воскова і електро депіляція</li>
+                            <li>пірсинг: типові та нетипові професійні проколи</li>
+                            <li>художнє татуювання: ексклюзив, cover-up, корекція</li>
+                            <li>перманентний макіяж (татуаж), корекція</li>
+                            <li>біо-тату, боді-пейнт (малюнки на тілі), глітер-тату (тату блискітками)</li>
+                        </ul>
+                       Професійні майстри салону допоможуть Вам у створені бажаного образу, подарують  задоволення і гарний настрій!
+                </div>  
+            </div>
+                <div id="open-modal-beauty-salon-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/beauty-salon.jpg" alt="beauty salon photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги послуги масажу -->
+    <section id="massage-services">
+            <label class="container-label">Послуги масажу</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-massage-services">
+                           <img src="images/news/massage.jpg" alt="massage photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span> турбується про комфорт, здоров’я і красу своїх гостей, тому пропонує послуги тренажерного залу, салону краси та професійного масажиста. Масаж є ефективним методом лікування і профілактики різних захворювань.<br>
+                        Масаж знімає м’язову втому та відновлює сили організму, підвищує його працездатність, укріплює суглоби і зв′язки, коректує фігуру. Наш масажний кабінет пропонує Вам різні види комплексного догляду за тілом.<br>
+                        <span class="accordeon-content-second-span">До Ваших послуг:</span>
+                        <ul>
+                            <li>Косметичний масаж</li>
+                            <li>Гідромасаж</li>
+                            <li>Вакуумний масаж</li>
+                            <li>Баромасаж</li>
+                            <li>Спортивний масаж</li>
+                            <li>Сегментарний масаж</li>
+                        </ul>
+                </div>  
+            </div>
+                <div id="open-modal-massage-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/news/massage.jpg" alt="massage photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги розміщення з тваринами -->
+    <section id="pets-services">
+            <label class="container-label">Розміщення з тваринами</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-pets-services">
+                           <img src="images/news/pets-services.jpg" alt="pets services photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span> завжди дбає про комфорт своїх гостей, тому ми запровадили послугу розміщення з тваринами. Відтепер, бронюючи наш готель, Ви зможете не хвилюватись про те, де залишити свого улюбленця та сміливо брати його з собою в подорож!<br>
+                        Варто лише зазначити при бронюванні, що Ви подорожуєте з твариною, і ми обов’язково надамо Вам інформацію про місця для прогулянок з улюбленцем, місцеві зоомагазини та ветеринарні аптеки.<br><br>
+                        <span class="accordeon-content-second-span">Також до Ваших послуг:</span> посуд для годування улюбленця та спеціальні одноразові пакети для відходів.<br><br>
+                        Ми впевнені, Вам і Вашому улюбленцю сподобається перебування в <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span>
+                </div>  
+            </div>
+                <div id="open-modal-pets-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/news/pets-services.jpg" alt="pets services photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги Сервіси для немовлят -->
+    <section id="kids-services">
+            <label class="container-label">Сервіси для немовлят</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-kids-services">
+                           <img src="images/news/kids-services.jpg" alt="kids services photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        Часто, плануючи подорож з немовлям, у батьків виникає питання - чи буде нам з малюком комфортно в готелі?<br><br>Справді, це питання є дуже важливим, тому ми подбали про те, щоб в нашому готелі було все необхідне для Вашого малюка.<br><br>Зазначте при бронюванні, що подорожуєте з немовлям і наш персонал подбає про дитяче ліжечко, крісло для годування та пеленальний столик. Також у вас буде можливість приготувати або розігріти дитяче харчування.<br><br>
+                        Якщо у Вас виникне потреба відлучитися - Ви зможете замовити послуги няні.*<br>
+                        *Послуга няні замовляється заздалегідь і оплачується окремо.<br>
+                </div>  
+            </div>
+                <div id="open-modal-kids-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/news/kids-services.jpg" alt="kids services photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Послуги екскурсії -->
+    <section id="excursions-services">
+            <label class="container-label">Екскурсії</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-excursions-services">
+                           <img src="images/news/excursions.jpg" alt="excursions photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                        Щодня прогулюючись вулицями Львова, ми помічаємо велику кількість левів довкола. Та чи замислюємось ми про те, яку історію має кожен Лев за плечима? Що ховається за його таємничим  поглядом?<br><br> <span class="accordeon-content-second-span">«GRAND PALACE Lviv Hotel»</span> з радістю допоможе Вам в організації різноманітних тематичних екскурсій древнім Львовом. <br><br>
+                        Детальніше за телефоном +38 (032) 667 45 90,пишіть нам на E-mail: grandpalacelvivhotel@.com.ua, або ж запитуйте на рецепшені<br>
+                        <br>
+                </div>  
+            </div>
+                <div id="open-modal-excursions-services" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/news/excursions.jpg" alt="excursions photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- Галерея -->
+    <section id="galery" class="common-container">
+        <label class="container-label">Галерея</label>
+            <div class="news-footer-layout">
+            	<div class="container-box-galery" id="galery-hotel-link">
+                    <a href="#galery-hotel">
+                    	<p>
+                    		&nbsp; &nbsp; &nbsp; Готель
+                    	</p>
+                    <img src="images/galery/hotel/hotel-05.jpg" >
+                    </a>
+                </div>
+                 <div class="container-box-galery" id="galery-rooms-link">
+                    <a href="#galery-rooms">
+                    	<p>
+                    		&nbsp; &nbsp; &nbsp;Номери
+                    	</p>
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div>
+                <div class="container-box-galery" id="galery-restaurant-link">
+                    <a href="#galery-restaurant">
+                    	<p>
+                    		Ресторан
+                    	</p>
+                    <img src="images/galery/restaurant/restaurant-01.jpg" >
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- галерея номерів -->
+    <section id="galery-rooms" class="common-container">
+        <label class="container-label">Номери</label>
+            <div class="news-footer-layout">
+                <!-- посилання на модальні вікна -->
+                <div class="container-box">
+                    <a href="#open-modal-room-01">
+                    <img src="images/galery/rooms/room-01.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-02">
+                    <img src="images/galery/rooms/room-02.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-03">
+                    <img src="images/galery/rooms/room-03.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-04">
+                    <img src="images/galery/rooms/room-04.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-05">
+                    <img src="images/galery/rooms/room-05.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-06">
+                    <img src="images/galery/rooms/room-06.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-07">
+                    <img src="images/galery/rooms/room-07.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-08">
+                    <img src="images/galery/rooms/room-08.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-09">
+                    <img src="images/galery/rooms/room-09.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-10">
+                    <img src="images/galery/rooms/room-10.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-11">
+                    <img src="images/galery/rooms/room-11.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-12">
+                    <img src="images/galery/rooms/room-12.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-13">
+                    <img src="images/galery/rooms/room-13.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-14">
+                    <img src="images/galery/rooms/room-14.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-15">
+                    <img src="images/galery/rooms/room-15.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-room-16">
+                    <img src="images/galery/rooms/room-16.jpg" >
+                    </a>
+                </div>
+
+                <!-- модальні вікна -->
+                <div id="open-modal-room-01" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-01.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-02" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-02.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-03" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-03.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-04" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-04.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-05" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-05.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-06" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-06.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-07" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-07.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-08" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-08.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-09" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-09.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-10" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-10.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-11" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-11.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-12" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-12.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-13" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-13.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-14" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-14.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-15" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-15.jpg" alt="room1">
+                    </div>
+                </div>
+                <div id="open-modal-room-16" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/rooms/room-16.jpg" alt="room1">
+                    </div>
+                </div>
+           </div>
+    </section>
+    <!-- галерея готелю -->
+    <section id="galery-hotel" class="common-container">
+            <label class="container-label">Готель</label>
+            <div class="news-footer-layout">
+                <!-- посилання на модальні вікна -->
+                <div class="container-box">
+                    <a href="#open-modal-hotel-01">
+                    <img src="images/galery/hotel/hotel-01.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-hotel-02">
+                    <img src="images/galery/hotel/hotel-02.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-hotel-03">
+                    <img src="images/galery/hotel/hotel-03.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-hotel-04">
+                    <img src="images/galery/hotel/hotel-04.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-hotel-05">
+                    <img src="images/galery/hotel/hotel-05.jpg" >
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-hotel-06">
+                    <img src="images/galery/hotel/hotel-06.jpg" >
+                    </a>
+                </div>
+                <!-- модальні вікна -->
+                <div id="open-modal-hotel-01" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-01.jpg" alt="hotel1">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-02" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-02.jpg" alt="hotel2">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-03" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-03.jpg" alt="hotel3">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-04" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-04.jpg" alt="hotel4">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-05" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-05.jpg" alt="hotel5">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-06" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-06.jpg" alt="hotel6">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- галерея ресторану -->
+    <section id="galery-restaurant" class="common-container">
+            <label class="container-label">Ресторан</label>
+            <div class="news-footer-layout">
+                <!-- посилання на модальні вікна -->
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-01">
+                    <img src="images/galery/restaurant/restaurant-01.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-02">
+                    <img src="images/galery/restaurant/restaurant-02.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-03">
+                    <img src="images/galery/restaurant/restaurant-03.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-04">
+                    <img src="images/galery/restaurant/restaurant-04.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-05">
+                    <img src="images/galery/restaurant/restaurant-05.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-06">
+                    <img src="images/galery/restaurant/restaurant-06.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-07">
+                    <img src="images/galery/restaurant/restaurant-07.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-08">
+                    <img src="images/galery/restaurant/restaurant-08.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-09">
+                    <img src="images/galery/restaurant/restaurant-09.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-10">
+                    <img src="images/galery/restaurant/restaurant-10.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-11">
+                    <img src="images/galery/restaurant/restaurant-11.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+                <div class="container-box">
+                    <a href="#open-modal-restaurant-12">
+                    <img src="images/galery/restaurant/restaurant-12.jpg" alt="restaurant-photo">
+                    </a>
+                </div>
+               
+                <!-- модальні вікна -->
+                <div id="open-modal-restaurant-01" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-01.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-02" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-02.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-03" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-03.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-04" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-04.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-05" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-05.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                 <div id="open-modal-restaurant-06" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-06.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                 <div id="open-modal-restaurant-07" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-07.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                 <div id="open-modal-restaurant-08" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-08.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                 <div id="open-modal-restaurant-09" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-09.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                 <div id="open-modal-restaurant-10" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-10.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-11" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-11.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+                <div id="open-modal-restaurant-12" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/restaurant/restaurant-12.jpg" alt="restaurant-photo">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Бронювання -->
+    <section id="booking">
+        <div class="booking-layout">
+            <div class="header-container-booking-1">
+                <form>
+                    <div class="header-container-booking-item-1">
+                        <p>
+                            <label>Заїзд:</label>
+                            <input type="date" name="">
+                        </p>
+                        <p>
+                            <label>Виїзд:</label>
+                            <input type="date" name="">
+                        </p>
+                    </div>
+                    <div class="header-container-booking-item-1">
+                        <p>
+                            <label>Дорослі:</label>
+                            <select name="adults[]">
+                                <option value="1" selected="selected">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Діти:</label>
+                            <select name="children[]">
+                               <option value="0" selected="selected">0</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </p>
+                    </div> 
+                    <div class="header-container-booking-item-1">
+                        <input type="submit" name="" value="Знайти">
+                    </div>
+                </form>
+            </div> 
+        </div>  
+        <div class="result">Результат</div>
+        <div class="booking-layout">
+            <div class="room">
+                <div class="room-type">Одномісний номер</div>
+                <div class="room-image"></div>
+                <div class="room-description"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Контакти -->
+    <section id="contacts" class="common-container">
+        <label class="container-label">Контакти</label>
+            <div class="news-footer-layout">
+                <div class="container-box-galery">
+                        <a href="#open-modal-hotel-01-contacts">
+                           <img src="images/galery/hotel/hotel-01.jpg" 
+                            alt="hotel photo">
+                        </a>
+                </div>
+                <div class="container-text" class="accordeon-content-second">
+                       <span class="accordeon-content-second-span">Адреса: </span> пр. Свободи 50, м. Львів, 79007, Україна<br>
+                       <span class="accordeon-content-second-span">e-mail: </span>grandpalacelvivhotel@.com.ua<br>
+                       <span class="accordeon-content-second-span">Телефон: </span> тел.: +38 (032) 667 45 90<br>
+                       <span class="accordeon-content-second-span">Факс:</span>  тел.: +38 (032) 667 45 91<br>
+                       <span class="accordeon-content-second-span">Мобільний:</span> +38 (093) 431 95 99<br>
+                       <label class="container-label">Зв'язок з нами</label>
+                            <form class="formContent" action="#">
+                                <input type="text" name="name" id="name" placeholder="NAME" required>
+                                <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                                <textarea rows="4" name="message" id="message" placeholder="YOUR MESSAGE" required></textarea>
+                                <button id="formButton">Надіслати</button>
+                            </form>
+                </div> 
+                <div class="container-box-galery-small-icons">
+                       <div>
+                        <a href="#open-modal-hotel-08-contacts">
+                           <img src="images/galery/hotel/hotel-08.jpg" alt="hotel photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-hotel-07-contacts">
+                           <img src="images/galery/hotel/hotel-07.jpg" alt="hotel photo" >
+                        </a>
+                       </div>
+                       <div>
+                        <a href="#open-modal-hotel-05-contacts">
+                           <img src="images/galery/hotel/hotel-05.jpg" alt="hotel photo" >
+                        </a>
+                       </div>
+                </div>
+            </div>
+                <div id="open-modal-hotel-01-contacts" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-01.jpg" 
+                            alt="hotel photo">
+                    </div>
+                </div>
+                 <div id="open-modal-hotel-08-contacts" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-08.jpg" 
+                            alt="hotel photo">
+                    </div>
+                </div>
+                 <div id="open-modal-hotel-07-contacts" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-07.jpg" 
+                            alt="hotel photo">
+                    </div>
+                </div>
+                <div id="open-modal-hotel-05-contacts" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Закрыть" class="close">&times;</a>
+                        <img src="images/galery/hotel/hotel-05.jpg" 
+                            alt="hotel photo">
+                    </div>
+                </div>
+             <label class="container-label">Карта</label>
+             <div id="map">
+             </div>
+             <p id="message"></p>
+    </section>
+    <!-- Футер -->
+    <footer id="footer">
+            <div class="news-footer-layout">
+                <div class="footer-layout-box4">
+                    <img src="images/logo-small.png">
+                </div>
+                <div class="footer-layout-box4">
+                    Готель «Grand Palace Lviv Hotel» <br>
+                    м. Львів, проспект Свободи 50<br>
+                    +38 (032) 667 45 90
+                </div>
+                <div class="footer-layout-box4">
+                    Ресторан «Grand Palace» <br>
+                    7 поверх<br>
+                    +38 (032) 667 45 90
+                </div>
+                <div class="footer-layout-box4">
+                    <div class="social"
+                        <a href="#"><img src="images/social/tripadvisor.png" alt="tripadvisor" title="tripadvisor"></a>
+                        <a href="#"><img src="images/social/fb.png" alt="facebook" title="facebook"></a>
+                        <a href="#"><img src="images/social/inst.png" alt="instagram" title="instagram"></a>
+                        <a href="#"><img src="images/social/youtube.png" alt="youtube" title="youtube"></a>
+                        <a href="#"><img src="images/social/g+.png" alt="google" title="google"></a>
+                    <p>Copyright © 2018 IS</p>
+                </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
