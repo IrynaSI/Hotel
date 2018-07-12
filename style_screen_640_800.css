@@ -1,0 +1,213 @@
+@media screen and (min-width: 640px) and (max-width: 800px) {
+
+	@media screen and (min-width: 720px) and (max-width: 800px) {
+		.header_layout {
+		    width: 700px;
+		}
+		.header-container {
+		    width: 98%;
+		}
+		.header-container-logo {
+		    width: 27%;
+		    height: 8.0625em; /*height: 129px;*/
+		}
+		.header-container-menu {
+			width: 73%;
+		}
+		.accordeon-offsets-content-picture p{
+    		margin:3.2em 1em; /*80px 75px;*/
+    	}
+		.accordeon-content-second,/*стиль в момент закриття*/
+	    #accordeon-container  input:checked ~ .accordeon-content-second {
+    		width: 690px;
+    		padding-left:0.2em;/*4px*/
+    		padding-right: 0.2em;
+    		height: 36em;
+        }
+        .accordeon-content-second-icons{
+			margin: 0 auto;
+    		width: 490px;
+	    }
+		#accordeon-content-second-icons-awards img{
+  	 		border:solid 1px #705852;
+   			width: 25%; /*170px*/
+   			height: 4.5em;/*88px*/
+		}
+		#news{
+    		height: 11.2em;/*230px*/
+        }
+		.news-footer-layout {
+    		width: 690px;
+    		/*background-color: red;*/
+        }
+        .news-box2{
+	    	width: 43%;
+	    	height: 9em;
+	    	margin-left: 2em;
+    	}
+    	.news-box2-img{
+    		width: 68%;
+	    	height: 9em;
+		}
+    	.news-box2-content{
+    		width: 32%;
+	    	font-size: 1em;
+	    	padding-top:2.5em;
+	    	height: 7.7em;
+	    }
+    	.footer-layout-box4 {
+    		width: 50%;/*25%*/
+    		padding-bottom: 0.5em;
+    		padding-left:4em;
+    		font-size:1em;/*16px*/
+		}
+		#footer{
+			height: 9.2em;/*84px*/
+	    }
+	}
+	@media screen and (min-width: 640px) and (max-width: 720px) {
+		.header_layout {
+		    width: 610px;
+		}
+		.header-container {
+		    width: 95%;
+		}
+		.header-container-logo {
+		    width: 25%;
+		    height: 6.5625em; /*height: 105px;*/
+		}
+		.header-container-menu {
+			width: 74%;
+		}
+	}
+	/* Header */
+	#header {
+	    height: 2.125em; /*height: 34px;*/
+	}
+	.header-container-menu-info{
+		height: 2.125em; /*height: 34px;*/
+		width: 2.125em; /*height: 34px;*/
+		text-indent: -999em;
+		margin-left: 92%;
+		background-image: url(images/short_menu.png);
+	}
+	.header-container-menu-main>ul {
+		height: 13.75em; /*height: 220px;*/
+	    margin-left: 66%;
+	    display: none;
+	}
+	.header-container-menu-info:hover {
+		cursor: pointer;
+	}
+	#short_menu:checked~.header-container-menu-main>ul{
+		display: block;
+	}
+	.header-container-menu-main>ul>li {
+    	clear: left;
+    	width: 100%;
+	}
+	.header-container-menu-main>ul>li>a {
+	    padding: 0.5625em 1.875em; /*padding: 9px 30px;*/
+	}
+	.header-container-menu-main>ul>li>ul,
+	.header-container-menu-main>ul>li>ul>li,
+	.header-container-menu-main>ul>li:hover>ul,
+	.header-container-menu-main>ul>li::before,
+	.header-container-menu-main>ul>li:first-child::before {
+	    display: none;
+	}
+	/* Form */
+	.header-container-booking {
+	    width: 450px;
+	    height: 10.25em; /*height: 180px;*/
+	    top: 16em; /*top: 270px;*/
+	    left: 58%;
+	    margin-left: -17.1875em; /*margin-left: -275px;*/
+	}
+	.header-container-booking form {
+	    font-size: 1em; /*font-size: 18px;*/
+	}
+	.header-container-booking-item:nth-child(3) { /*ділити на 18*/
+	    width: 100%;
+	}
+	.header-container-booking-item:nth-child(3) input{
+	    font-size: 1.125em; /*font-size: 18px;*/
+	    margin-top: 10.5px;
+	    margin-left: 137.5px;
+	}
+	/* Guests slider */
+	.accordeon-content-third,
+	#accordeon-container input:checked ~ .accordeon-content-third{
+	    width: 620px;
+	    margin: 0 auto;
+	}
+	.guests-slider {
+	    width: 29.375em; /*width: 470px;*/
+	}
+	.guests-slider-arrow {
+	    width: 24px;
+	}
+	.guests-slider-layout {
+	   width: 410px;
+	}
+	#accordeon-container  input:checked ~ .accordeon-content-first {
+    height: 10em;/* 208px*/
+	}
+	.accordeon-offsets-content-picture{
+    width: 33.33%;
+    height: 10em;/*208px*/
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+	}
+	.accordeon-offsets-content-picture p{
+    		margin:2em 0.5em; /*80px 75px;*/
+    }
+    .accordeon-content-second,/*стиль в момент закриття*/
+	 #accordeon-container  input:checked ~ .accordeon-content-second {
+    		width: 620px;
+    		padding-left:0.2em;/*4px*/
+    		padding-right: 0.2em;
+    		height: 36em;
+        }
+    .accordeon-content-second-icons{
+			margin: 0 auto;
+    		width: 490px;
+	    }
+	#accordeon-content-second-icons-awards img{
+  	 		border:solid 1px #705852;
+   			width: 25%; /*170px*/
+   			height: 4.5em;/*88px*/
+		}
+	#news{
+    		height: 11.2em;/*230px*/
+        }
+	.news-footer-layout {
+    		width: 620px;
+        }
+    .news-box2{
+	    	width: 43%;
+	    	height: 9em;
+	    	margin-left: 1.7em;
+    	}
+    .news-box2-img{
+    		width: 68%;
+	    	height: 9em;
+		}
+    	.news-box2-content{
+    		width: 32%;
+	    	font-size: 0.97em;
+	    	padding-top:2em;
+	    	height: 7.7em;
+	    }
+    	.footer-layout-box4 {
+    		width: 50%;/*25%*/
+    		padding-bottom: 0.5em;
+    		padding-left:3em;
+    		font-size:1em;/*16px*/
+		}
+		#footer{
+			height: 9.2em;/*84px*/
+	    }
+
+}
