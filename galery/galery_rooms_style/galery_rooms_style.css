@@ -139,30 +139,6 @@
 .container-text ul{
     list-style-type:square;
 }
-#galery,
-#hotel-information,
-#hotel-about,
-#hotel-history,
-#hotel-events,
-#galery-rooms,
-#galery-hotel,
-#galery-restaurant,
-#rooms,
-#room-single,
-#room-double,
-#room-twin,
-#room-semiluxury,
-#room-luxury,
-#services,
-#gym-services,
-#beauty-salon-services,
-#massage-services,
-#pets-services,
-#kids-services,
-#excursions-services,
-#contacts {
-    display: none;
-}
 #booking{
     display: none;
 }
