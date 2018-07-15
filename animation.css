@@ -48,13 +48,12 @@
 }
 @-webkit-keyframes cycle {
     0%  { top:0px; }
-    4%  { top:0px; }
+    4%  { top:0px; } 
     16% { top:0px; opacity:1; z-index:0; } 
-    20% { top:32em; opacity:0; z-index:0; }
-    21% { top:-32em; opacity:0; z-index:-1; }
-    50% { top:-32em; opacity:0; z-index:-1; }
-    92% { top:-32em; opacity:0; z-index:0; }
-    96% { top:-32em; opacity:0; }
+    20% { top:32em; opacity:1; z-index:0; } 
+    21% { top:-32em; opacity:1; z-index:-1; }
+    92% { top:-32em; opacity:1; z-index:0; }
+    96% { top:-32em; opacity:1; }
     100%{ top:0px; opacity:1; }   
 }
 @-webkit-keyframes cycletwo {
@@ -88,6 +87,54 @@
     100%{ top:-32em; opacity:0; z-index:-1; }
 }
 @-webkit-keyframes cyclefive {
+    0%  { top:-32em; opacity:0; }
+    76% { top:-32em; opacity:0; }
+    80% { top:0px; opacity:1; }
+    84% { top:0px; opacity:1; }
+    96% { top:0px; opacity:1; z-index:0; }
+    100%{ top:32em; opacity:0; z-index:0; }
+}
+@-ms-keyframes cycle {
+    0%  { top:0px; }
+    4%  { top:0px; } 
+    16% { top:0px; opacity:1; z-index:0; } 
+    20% { top:32em; opacity:1; z-index:0; } 
+    21% { top:-32em; opacity:1; z-index:-1; }
+    92% { top:-32em; opacity:1; z-index:0; }
+    96% { top:-32em; opacity:1; }
+    100%{ top:0px; opacity:1; }   
+}
+@-ms-keyframes cycletwo {
+    0%  { top:-32em; opacity:0; }
+    16% { top:-32em; opacity:0; }
+    20% { top:0px; opacity:1; }
+    24% { top:0px; opacity:1; } 
+    36% { top:0px; opacity:1; z-index:0; } 
+    40% { top:32em; opacity:0; z-index:0; }
+    41% { top:-32em; opacity:0; z-index:-1; }  
+    100%{ top:-32em; opacity:0; z-index:-1; }
+}
+@-ms-keyframes cyclethree {
+    0%  { top:-32em; opacity:0; }
+    36% { top:-32em; opacity:0; }
+    40% { top:0px; opacity:1; }
+    44% { top:0px; opacity:1; } 
+    56% { top:0px; opacity:1; z-index:0; } 
+    60% { top:32em; opacity:0; z-index:0; } 
+    61% { top:-32em; opacity:0; z-index:-1; }
+    100%{ top:-32em; opacity:0; z-index:-1; }
+}
+@-ms-keyframes cyclefour {
+    0%  { top:-32em; opacity:0; }
+    56% { top:-32em; opacity:0; }
+    60% { top:0px; opacity:1; }
+    64% { top:0px; opacity:1; }
+    76% { top:0px; opacity:1; z-index:0; }
+    80% { top:32em; opacity:0; z-index:0; }
+    81% { top:-32em; opacity:0; z-index:-1; }
+    100%{ top:-32em; opacity:0; z-index:-1; }
+}
+@-ms-keyframes cyclefive {
     0%  { top:-32em; opacity:0; }
     76% { top:-32em; opacity:0; }
     80% { top:0px; opacity:1; }
