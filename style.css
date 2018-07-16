@@ -155,14 +155,14 @@
     background-color: #e6d7d4;
 }
 .header-container-booking-item:nth-child(1) p input::-webkit-inner-spin-button,
-.header-container-booking-item:nth-child(1) p input::-webkit-clear-button{ 
+.header-container-booking-item:nth-child(1) p input::-webkit-clear-button
+{ 
     display: none; 
 }
 .header-container-booking-item:nth-child(1) p input::-moz-inner-spin-button,
 .header-container-booking-item:nth-child(1) p input::-moz-clear-button { 
     display: none; 
 }
-
 .header-container-booking-item:nth-child(2) { /*ділити на 18*/
     width: 11.11em; /*width: 200px;*/
 }
@@ -400,6 +400,8 @@
     height: inherit; /*height: 147px;*/
     -moz-animation: slide-guests 100s linear infinite;
     -webkit-animation: slide-guests 100s linear infinite;
+    -ms-animation: slide-guests 100s linear infinite;
+    -o-animation: slide-guests 100s linear infinite;
     animation-fill-mode: forwards; 
 }
 .guests-slider-layout-items div {
